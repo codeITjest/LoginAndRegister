@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta author="Jonathan T. Estacio">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=".../css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css"></link> 
+
+    <title>Login and Registration</title>
+  </head>
+  <body>
+  	
+	<div class="login-page">
+		<div class="form">
+			<!--Registration Form-->
+			<form class="register-form">
+				<input type="text" placeholder="user name">
+				<input type="password" placeholder="password">
+				<input type="text" placeholder="email address">
+				
+				<button>Register</button>
+				<p class="message">Already Registered? <a href="index.html">Login</a></p>
+			</form>
+			
+			
+		</div>
+	</div>
+	
+	<script src="jquery.js"></script>
+	
+	<script>
+		$('.message').click(function(){
+			$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		});
+	</script>
+		
+	
+    <script src=".../js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
